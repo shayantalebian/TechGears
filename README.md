@@ -1,6 +1,6 @@
 # TechGear
 
-## [LiveSite](https://www.shayantechgear-1.netlify.app)
+## [LiveSite](https://shayantechgear-1.netlify.app/)
 
 ### More about this project
 
