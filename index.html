@@ -29,7 +29,7 @@
 
     <!-- HEADER -->
     <header>
-      <nav class="navbar navbar-expand-lg">
+      <nav class="navbar navbar-expand-lg fixed-top" id="header">
         <div class="container">
           <a class="navbar-brand fw-bold fs-2" href="#">Techgears</a>
           <button
@@ -51,7 +51,7 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link fs-6" href="#">About</a>
+                <a class="nav-link fs-6" href="#about">About</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link fs-6" href="#">Products</a>
@@ -67,7 +67,69 @@
           </div>
         </div>
       </nav>
+
+      <!-- HERO SECTION -->
+      <section>
+        <div class="container pt-5">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-12 col-lg-6 t-center-1">
+              <h1 class="display-4 fw-bold">
+                <span class="text-primary">Discover</span> the Future of Tech
+              </h1>
+              <p class="lead pb-4 pt-2">
+                Explore our latest gadgets and accessories designed to elevate
+                your gitial lifestyle.
+              </p>
+              <button class="btn btn-primary px-5 py-3 d-inline-block fw-bold">
+                Shop Now
+              </button>
+            </div>
+            <div class="col-12 col-lg-6">
+              <img
+                src="./assets/hero.webp"
+                alt="Hero picture"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
     </header>
+
+    <!-- ABOUT SECTION -->
+    <section class="container py-5 mt-5" id="about">
+      <div class="row g-5">
+        <div class="col-12 col-lg-5">
+          <img
+            src="./assets/img-1.webp"
+            alt=""
+            class="img-fluid ms-auto d-block"
+          />
+        </div>
+        <div class="col-12 col-lg-7">
+          <h2 class="text-primary fs-1 fw-bold mb-3">About TechGear Hub</h2>
+          <p>
+            TechGear Hub is at the forefront of technology innovation, curating
+            a collection of the latest gadgets and accessories to elevate your
+            digital lifestyle. We believe in the power of technology to enhance
+            everyday experiences, and our mission is to bring cutting-edge
+            products to tech enthusiasts around the world.
+          </p>
+          <p>
+            With a focus on quality, functionality, and style, TechGear Hub
+            sources products from leading manufacturers and emergin tech
+            innovators. Our team of experts carefully selects each item to
+            ensure it meets our high standards and align with the ever-evolving
+            needs of our diverse community of customers.
+          </p>
+          <button
+            class="btn btn-primary px-5 py-3 d-inline-block fs-5 fw-bold mt-4"
+          >
+            Read More About us
+          </button>
+        </div>
+      </div>
+    </section>
 
     <!-- BOOTSTRAP JS -->
     <script
@@ -76,5 +138,15 @@
       integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const nav = document.querySelector("#header");
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 0) {
+          nav.classList.add("header-moved");
+        } else {
+          nav.classList.remove("header-moved");
+        }
+      });
+    </script>
   </body>
 </html>

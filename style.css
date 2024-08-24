@@ -2,7 +2,8 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-header {
+header,
+.header-bg {
   background: linear-gradient(180deg, #c4b6fd, #93acfc);
 }
 
@@ -44,4 +45,27 @@ p {
 
 ul {
   text-align: center;
+}
+
+.text-primary {
+  color: #257dfd;
+}
+
+@media (max-width: 992px) {
+  .t-center-1 {
+    text-align: center;
+  }
+}
+
+.header-moved {
+  background: linear-gradient(
+    180deg,
+    rgba(196, 182, 253, 0.93),
+    rgba(147, 172, 252, 0.93)
+  );
+
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.15), 5px 5px 3px rgba(0, 0, 0, 0.15);
+  z-index: 11;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
