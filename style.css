@@ -1,7 +1,10 @@
 body {
   font-family: "Roboto", sans-serif;
 }
-
+* {
+  padding: 0;
+  margin: 0;
+}
 header,
 .header-bg {
   background: linear-gradient(180deg, #c4b6fd, #93acfc);
@@ -63,7 +66,7 @@ ul {
     rgba(196, 182, 253, 0.93),
     rgba(147, 172, 252, 0.93)
   );
-
+  top: 2rem;
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.15), 5px 5px 3px rgba(0, 0, 0, 0.15);
   z-index: 11;
   border-bottom-right-radius: 10px;
@@ -88,4 +91,17 @@ ul {
 
 .nav-tabs {
   border: none;
+}
+
+.h3,
+h3 {
+  font-size: calc(1.3rem + 0.5vw) !;
+}
+
+.ptt-5 {
+  padding-top: 10rem !important;
+}
+
+.menu-fix {
+  z-index: 45454;
 }

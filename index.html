@@ -29,7 +29,7 @@
 
     <!-- HEADER -->
     <header>
-      <nav class="navbar navbar-expand-lg fixed-top" id="header">
+      <nav class="container navbar navbar-expand-lg fixed-top" id="header">
         <div class="container">
           <a class="navbar-brand fw-bold fs-2" href="#">Techgears</a>
           <button
@@ -43,18 +43,16 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="collapse navbar-collapse menu-fix" id="navbarNav">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active fs-6" aria-current="page" href="#"
-                  >Home</a
-                >
+                <a class="nav-link fs-6" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link fs-6" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fs-6" href="#">Products</a>
+                <a class="nav-link fs-6" href="#products">Products</a>
               </li>
               <li class="nav-item">
                 <a
@@ -70,7 +68,7 @@
 
       <!-- HERO SECTION -->
       <section>
-        <div class="container pt-5">
+        <div class="container ptt-5">
           <div class="row align-items-center justify-content-center">
             <div class="col-12 col-lg-6 t-center-1">
               <h1 class="display-4 fw-bold">
@@ -178,7 +176,7 @@
     </section>
 
     <!-- PRODUCTS -->
-    <section class="container py-5">
+    <section class="container py-5" id="products">
       <div class="row">
         <div class="col-12">
           <h2 class="text-primary fs-1 fw-bold mb-3 text-center">
@@ -432,6 +430,8 @@
     <!-- SCROLL CODE -->
     <script>
       const nav = document.querySelector("#header");
+      const btn = document.querySelector(".navbar-toggler");
+      const collapse = document.querySelector(".navbar-collapse");
       window.addEventListener("scroll", function () {
         if (window.scrollY > 0) {
           nav.classList.add("header-moved");
